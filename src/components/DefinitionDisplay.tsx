@@ -23,7 +23,7 @@ export const DefinitionDisplay: React.FC = () => {
             <div key={mIndex}>
               <h3>{meaning.partOfSpeech}</h3>
               {meaning.definitions.map((def, dIndex) => (
-                <div key={dIndex}>
+                <div key={dIndex} >
                   <p><strong>Definition:</strong> {def.definition}</p>
                   {def.example && <p><em>Example: {def.example}</em></p>}
                 </div>

@@ -15,14 +15,14 @@ export const WordSearch: React.FC = () => {
   };
 
   return (
-    <div>
-      <input
+    <div className='word-search'>
+      <input className='word-input'
         type="text"
         value={word}
         onChange={(e) => setWord(e.target.value)}
         placeholder="Enter a word"
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className='searchButton' onClick={handleSearch}>Search</button>
     </div>
   );
 };

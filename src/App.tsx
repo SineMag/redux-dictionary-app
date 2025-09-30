@@ -1,14 +1,16 @@
-import './App.css';
-import { WordSearch } from './components/WordSearch';
-import { DefinitionDisplay } from './components/DefinitionDisplay';
+import "./App.css";
+import { WordSearch } from "./components/WordSearch";
+import { DefinitionDisplay } from "./components/DefinitionDisplay";
 
 function App() {
   return (
     <>
-      <h1>Dictionary</h1>
-      <WordSearch />
-      <hr />
-      <DefinitionDisplay />
+      <div className="container">
+        <h1>Dictionary</h1>
+        <WordSearch />
+        
+        <DefinitionDisplay />
+      </div>
     </>
   );
 }
